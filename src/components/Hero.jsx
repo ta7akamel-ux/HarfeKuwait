@@ -55,8 +55,8 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={textVariants} className="unwan-al-batal text-5xl md:text-7xl font-serif font-bold text-text-primary mb-6 leading-tight">
-            تصميم وصيانة مطابخ <br />
-            <span className="metallic-text-animated mt-2 inline-block">ألومنيوم فاخرة</span>
+            فني المنيوم: تصميم و <br />
+            <span className="metallic-text-animated mt-2 inline-block">صيانة مطابخ المنيوم بالكويت</span>
           </motion.h1>
           
           <motion.p variants={textVariants} className="wasf-al-batal text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">

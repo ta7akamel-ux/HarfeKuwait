@@ -4,23 +4,23 @@ import { Archive, Wrench, RefreshCw, Compass } from 'lucide-react';
 
 const services = [
   {
-    title: 'تصميم مطابخ جديدة',
-    description: 'تصميم مطابخ ألومنيوم تواكب أحدث الصيحات العالمية لتناسب مساحتك واحتياجاتك.',
+    title: 'تركيب وتفصيل مطابخ الكويت',
+    description: 'تصميم وتفصيل مطابخ ألومنيوم تواكب أحدث الصيحات العالمية لتناسب مساحتك واحتياجاتك.',
     icon: <Archive size={28} className="text-brand-gold" />
   },
   {
-    title: 'صيانة وإصلاح',
-    description: 'فريق متخصص لصيانة أدراج، فصالات، وأسطح الألمنيوم لتعود كالجديدة.',
+    title: 'تصليح كبتات مطبخ',
+    description: 'فريق متخصص لتصليح كبتات المطبخ، صيانة المفصلات والأسطح لتعود كالجديدة.',
     icon: <Wrench size={28} className="text-brand-gold" />
   },
   {
-    title: 'تجديد وتطوير',
-    description: 'غيّر لون أو واجهات مطبخك الحالي بأقل تكلفة مع ضمان الجودة العالية.',
+    title: 'صيانة ادراج مطابخ المنيوم',
+    description: 'تجديد وتطوير أدراج مطابخ المنيوم وتغيير الواجهات بأقل تكلفة مع ضمان الجودة.',
     icon: <RefreshCw size={28} className="text-brand-gold" />
   },
   {
-    title: 'قياس وتخطيط',
-    description: 'رفع مقاسات دقيق وتقديم رسم هندسي 3D قبل البدء بالتنفيذ.',
+    title: 'قياس وتخطيط دقيق',
+    description: 'رفع مقاسات دقيق وتقديم رسم هندسي 3D لضمان أفضل استغلال للمساحة قبل البدء.',
     icon: <Compass size={28} className="text-brand-gold" />
   }
 ];
@@ -36,7 +36,7 @@ const Services = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="unwan-al-qism text-3xl md:text-4xl font-serif text-text-primary font-bold mb-4">خدماتنا</h2>
+          <h2 className="unwan-al-qism text-3xl md:text-4xl font-serif text-text-primary font-bold mb-4">خدمات تركيب وتفصيل مطابخ الكويت</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-brand-gold-light to-brand-gold rounded-full mx-auto"></div>
         </motion.div>
 

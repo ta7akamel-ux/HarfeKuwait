@@ -158,7 +158,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-5 order-1 md:order-1 md:max-w-sm">
             <h3 className="text-3xl font-serif font-bold text-brand-gold">حرفي الكويت</h3>
             <p className="text-base text-text-secondary leading-relaxed">
-              نصنع الفخامة من الألومنيوم، رواد تصميم وصيانة المطابخ الفاخرة في الكويت بمعايير عالمية.
+              نصنع الفخامة من الألومنيوم، نعتبر من أفضل محلات المطابخ في الكويت لتصميم وصيانة المطابخ الفاخرة بمعايير عالمية. نوفر لك جودة مطابخ الشويخ الصناعية وبأفضل أسعار المطابخ في الكويت.
             </p>
             <p className="text-sm text-text-secondary/70 mt-2 font-sans">
               © 2024 حرفي الكويت. التميز في صناعة الألومنيوم.

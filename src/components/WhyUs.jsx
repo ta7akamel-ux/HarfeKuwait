@@ -38,7 +38,7 @@ const WhyUs = () => {
               transition={{ duration: 0.7 }}
             >
               <div className="h-64 rounded-2xl overflow-hidden relative border border-white/5 shadow-2xl">
-                <img src={image1} alt="تفاصيل المطبخ" className="w-full h-full object-cover" />
+                <img src={image1} alt="فني تصليح كبتات مطبخ المنيوم في الكويت" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-brand-navy/20 mix-blend-overlay"></div>
               </div>
               <div className="h-48 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
@@ -54,7 +54,7 @@ const WhyUs = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <img src={image2} alt="جودة التصنيع" className="w-full h-full object-cover" />
+              <img src={image2} alt="أفضل محلات المطابخ في الكويت لتفصيل الألمنيوم" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-brand-navy/20 mix-blend-overlay"></div>
               <div className="absolute bottom-4 left-4 text-xs font-medium text-text-secondary">فريق محترف</div>
             </motion.div>
@@ -70,8 +70,7 @@ const WhyUs = () => {
             >
               <h2 className="text-3xl md:text-4xl font-serif text-text-primary font-bold mb-6">ليش تختار <br/><span className="text-brand-gold">حرفي الكويت؟</span></h2>
               <p className="text-text-secondary text-base leading-relaxed mb-12">
-                نحن لا نصنع مجرد مطابخ، بل نبتكر مساحات عمل فنية تدوم لعقود. 
-                التزامنا بالجودة يبدأ من اختيار أصغر مسمار وحتى تسليم المشروع.
+                باعتبارنا من أفضل محلات المطابخ في الكويت، نحن لا نصنع مجرد مطابخ، بل نبتكر مساحات عمل فنية تدوم لعقود. سواء كنت تبحث عن جودة مطابخ الشويخ الصناعية أو التصاميم العصرية، التزامنا بالجودة يبدأ من اختيار أصغر مسمار وحتى تسليم المشروع.
               </p>
 
               <div className="flex flex-col gap-8">
