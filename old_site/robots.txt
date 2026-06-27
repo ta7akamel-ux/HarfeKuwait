@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harfekuwait.com/sitemap.xml
+Host: harfekuwait.com

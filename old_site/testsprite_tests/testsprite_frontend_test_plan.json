@@ -1,0 +1,412 @@
+[
+  {
+    "id": "TC001",
+    "title": "Landing page loads with video background and overlay",
+    "description": "Verify the landing page loads successfully on multiple browsers and devices with the video background autoplaying silently and the dark overlay visible for text readability.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the landing page URL on desktop browser."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the video background starts playing automatically without sound."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the dark overlay is visible on top of the video to ensure text is readable."
+      },
+      {
+        "type": "action",
+        "description": "Repeat the open action on a mobile browser."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm video background plays silently and overlay is present on mobile."
+      },
+      {
+        "type": "action",
+        "description": "Test on multiple major browsers (Chrome, Firefox, Safari, Edge)."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate consistent video and overlay behavior across all tested browsers."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Responsive navigation menu functions correctly on all devices",
+    "description": "Check that the navigation menu is accessible and usable on desktop and mobile devices including hamburger menu behavior on smaller screens and smooth scrolling to page sections.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the landing page on desktop."
+      },
+      {
+        "type": "action",
+        "description": "Click on navigation menu items."
+      },
+      {
+        "type": "assertion",
+        "description": "Page smoothly scrolls to the corresponding section."
+      },
+      {
+        "type": "action",
+        "description": "Load the landing page on a small screen/mobile viewport."
+      },
+      {
+        "type": "assertion",
+        "description": "Hamburger menu is visible and clickable."
+      },
+      {
+        "type": "action",
+        "description": "Tap the hamburger menu to open and select a menu item."
+      },
+      {
+        "type": "assertion",
+        "description": "Menu closes and page smoothly scrolls to the selected section."
+      },
+      {
+        "type": "action",
+        "description": "Test responsiveness on multiple screen sizes from small mobiles to large desktops."
+      },
+      {
+        "type": "assertion",
+        "description": "Navigation adapts layout correctly for all viewport sizes."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Contact form submission via EmailJS, Formspree, and Netlify",
+    "description": "Validate that the contact form is correctly submitting data via all three integrated methods and that form validation works according to defined rules.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open contact form on the website."
+      },
+      {
+        "type": "action",
+        "description": "Fill the form with valid Arabic name, valid Kuwaiti phone number (+965... or local format), valid email, service type, message longer than 10 characters, and check privacy policy checkbox."
+      },
+      {
+        "type": "action",
+        "description": "Submit the form selecting EmailJS as submission method."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify successful submission indication and no validation errors."
+      },
+      {
+        "type": "action",
+        "description": "Repeat the above for Formspree submission method."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm form data received successfully with proper API response."
+      },
+      {
+        "type": "action",
+        "description": "Repeat for Netlify Forms submission."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate success notification is shown after submission."
+      },
+      {
+        "type": "action",
+        "description": "Test form submission with invalid phone format."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation error message related to phone number."
+      },
+      {
+        "type": "action",
+        "description": "Test form submission with missing required fields and without privacy acceptance."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that submission is blocked and errors are shown for each missing/invalid field."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Customer rating system accepts ratings 1-5 and feedback",
+    "description": "Ensure that the star rating system allows users to select ratings from 1 to 5, accepts textual feedback, and submits correctly with validation.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to rating section."
+      },
+      {
+        "type": "action",
+        "description": "Select each star rating from 1 through 5 and enter corresponding feedback for each."
+      },
+      {
+        "type": "action",
+        "description": "Submit the rating with valid customer name and feedback."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify success message confirming rating submitted."
+      },
+      {
+        "type": "action",
+        "description": "Attempt submission with rating outside allowed range (e.g., 0 or 6)."
+      },
+      {
+        "type": "assertion",
+        "description": "Check form validation prevents submission and shows appropriate error."
+      },
+      {
+        "type": "action",
+        "description": "Try submitting without feedback or customer name."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that missing required fields trigger errors and block submission."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Image gallery lazy loads and lightbox functions",
+    "description": "Validate images in gallery load lazily as user scrolls and clicking an image opens it in a lightbox with navigation controls.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open gallery section."
+      },
+      {
+        "type": "assertion",
+        "description": "Initial images visible are loaded; others load on scroll (lazy loading behavior)."
+      },
+      {
+        "type": "action",
+        "description": "Click on a gallery image."
+      },
+      {
+        "type": "assertion",
+        "description": "Image opens in a lightbox overlay."
+      },
+      {
+        "type": "action",
+        "description": "Navigate to next and previous images using lightbox controls."
+      },
+      {
+        "type": "assertion",
+        "description": "Lightbox changes images accordingly and closes when requested."
+      },
+      {
+        "type": "action",
+        "description": "Verify images can be downloaded from the gallery interface."
+      },
+      {
+        "type": "assertion",
+        "description": "Downloaded files correspond to correct gallery images."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "SEO meta tags, sitemap.xml and robots.txt validation",
+    "description": "Ensure the website’s SEO components are correctly implemented including meta tags in HTML, presence and correctness of sitemap.xml and robots.txt files.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Visit the home page and inspect the HTML source."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify meta tags include proper title, description, Open Graph tags, and structured data schema."
+      },
+      {
+        "type": "action",
+        "description": "Access sitemap.xml URL."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that sitemap XML loads correctly and contains the expected URLs."
+      },
+      {
+        "type": "action",
+        "description": "Access robots.txt file URL."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify robots.txt is present and contains valid directives."
+      },
+      {
+        "type": "action",
+        "description": "Make a change in sitemap.xml and verify if the updated version is served."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm sitemap updates reflect immediately after change."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Progressive Web App offline support and caching",
+    "description": "Verify that the website functions correctly offline using the service worker and PWA features including caching of critical resources.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the website online to activate service worker caching."
+      },
+      {
+        "type": "action",
+        "description": "Turn off network connectivity (simulate offline)."
+      },
+      {
+        "type": "action",
+        "description": "Reload the website."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the site loads correctly with cached content and main functionalities still work."
+      },
+      {
+        "type": "action",
+        "description": "Try to navigate through multiple pages/sections while offline."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation and content remain available without errors."
+      },
+      {
+        "type": "action",
+        "description": "Test submission of forms or interactions while offline."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify appropriate error messages or offline handling are displayed."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Multiple direct contact methods usability",
+    "description": "Test each direct contact method integration (phone call link, WhatsApp chat, social media links, and vCard generation) for correct behavior.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Click the phone contact link."
+      },
+      {
+        "type": "assertion",
+        "description": "Phone dialer app opens with correct number prefilled."
+      },
+      {
+        "type": "action",
+        "description": "Click the WhatsApp contact link."
+      },
+      {
+        "type": "assertion",
+        "description": "WhatsApp chat window or app opens targeting the provided number."
+      },
+      {
+        "type": "action",
+        "description": "Click social media contact links."
+      },
+      {
+        "type": "assertion",
+        "description": "Each social link opens correct social media page in a new tab."
+      },
+      {
+        "type": "action",
+        "description": "Click the vCard generation link."
+      },
+      {
+        "type": "assertion",
+        "description": "vCard contact file is generated and downloaded successfully."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Google Analytics tracks user interactions and form submissions",
+    "description": "Check that Google Analytics correctly logs page visits, navigation actions, and contact form submissions for data analysis.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the site and browse through multiple sections."
+      },
+      {
+        "type": "assertion",
+        "description": "Google Analytics records page views and navigation events."
+      },
+      {
+        "type": "action",
+        "description": "Submit a valid contact form."
+      },
+      {
+        "type": "assertion",
+        "description": "Google Analytics tracks the form submission event."
+      },
+      {
+        "type": "action",
+        "description": "Perform multiple interactions such as rating submission and downloading images."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify corresponding user events are sent to Google Analytics."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Website responsiveness and RTL layout correctness",
+    "description": "Ensure the site layout is responsive on all screen sizes with proper right-to-left Arabic text and correct usage of Tajawal and Cairo fonts.",
+    "category": "ui",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the site on mobile, tablet, and desktop screen sizes."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify content adjusts fluidly and navigation adapts on all devices."
+      },
+      {
+        "type": "action",
+        "description": "Check text direction on all pages."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm text flows from right to left consistently."
+      },
+      {
+        "type": "action",
+        "description": "Inspect fonts used in the website."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate Tajawal and Cairo fonts are correctly applied in Arabic text elements."
+      }
+    ]
+  }
+]

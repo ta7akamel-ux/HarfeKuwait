@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5173",
+  "executionArgs": {
+    "projectName": "HarfeKuwait",
+    "projectPath": "C:\\Users\\3mar\\Desktop\\HarfeKuwait",
+    "testIds": [],
+    "additionalInstruction": "Focus tests on favicon behavior and PWA integration: 1) Verify <link rel=\"icon\"> tags exist and resolve: /assets/favicon-32x32.png, /assets/favicon-16x16.png, and /favicon.ico. 2) Request assets over HTTP and assert 200 status, correct content-type image/png or image/x-icon, and non-zero content-length. 3) Confirm manifest icons reference existing files and load with 200. 4) Check service worker cache entries include favicon files; validate cache busting when CACHE_NAME changes. 5) Validate caching headers and absence of conflicting Cache-Control for favicon responses. 6) Invalidate cache by changing sw.js cache version, reload, and confirm new favicon is fetched. 7) Cross-browser emulation: Chrome/Firefox/Safari user agents—ensure favicon shows in document and tab. 8) Ensure no duplicate or conflicting favicon tags (apple-touch-icon, mask-icon) causing override. 9) Validate robots.txt and sitemap do not block favicon paths. 10) Verify that /favicon.ico exists at root and is accessible. 11) Confirm that <link rel=\"shortcut icon\"> points to a valid path. 12) Verify path correctness on relative vs absolute links when hosted under subpath. Provide a detailed report with pass/fail, root causes, and fixes.",
+    "envs": {
+      "API_KEY": "sk-user-vDGT_7JJXbyfKlbCpn_YEfqKfZMN-hJR5WganuKvNSIfHnSsGdYMkzYmgmaHUmjWCEsuxAk43yao-IWmOhPhYjpL9LsKxNN4-s9Og6G4CKdd924-CMNMJWX_HrbiZT_To08"
+    }
+  },
+  "proxy": "http://de1a8648-88c0-46f5-a9c5-5b9f1c12a7ef:79w83Dnjc0kCDwoLvaei86tsRfMFNvV3@tun.testsprite.com:8080"
+}

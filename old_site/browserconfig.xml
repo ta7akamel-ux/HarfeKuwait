@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="assets/favicon_72x72.png"/>
+            <square150x150logo src="assets/favicon_128x128.png"/>
+            <square310x310logo src="assets/favicon_256x256.png"/>
+            <wide310x150logo src="assets/favicon_256x256.png"/>
+            <TileColor>#00783E</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="https://harfekuwait.com/"/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig>
