@@ -53,8 +53,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={textVariants} className="unwan-al-batal text-5xl md:text-7xl font-serif font-bold text-text-primary mb-6 leading-tight">
-            فني المنيوم: تصميم و <br />
-            صيانة مطابخ المنيوم بالكويت
+            فني المنيوم: تصميم <span className="whitespace-nowrap">وصيانة مطابخ</span> المنيوم بالكويت
           </motion.h1>
           
           <motion.p variants={textVariants} className="wasf-al-batal text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">
@@ -68,7 +67,7 @@ const Hero = () => {
             </a>
             <a href="#gallery" className="group px-8 py-4 border-2 border-brand-gold/30 text-text-primary font-bold rounded-full hover:border-brand-gold hover:text-brand-gold transition-all flex items-center justify-center gap-3 w-full sm:w-auto glass-card">
               استكشف أعمالنا
-              <span className="transform transition-transform group-hover:-translate-x-2">←</span>
+              <span className="transform transition-transform group-hover:translate-y-2">↓</span>
             </a>
           </motion.div>
         </motion.div>

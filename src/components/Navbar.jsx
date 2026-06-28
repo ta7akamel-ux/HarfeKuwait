@@ -56,24 +56,25 @@ const Navbar = () => {
             </span>
           </a>
 
-          <div className={`rawabit-al-tanaqul hidden md:flex items-center gap-8`}>
+          <ul className={`rawabit-al-tanaqul hidden md:flex md:flex-row items-center gap-8`} dir="rtl">
             {links.map((link, idx) => (
-              <a 
-                key={idx} 
-                href={link.href} 
-                className={`rabit relative text-sm font-medium transition-colors hover:text-brand-gold ${activeSection === link.id ? 'text-brand-gold' : 'text-text-primary'}`}
-              >
-                {link.name}
-                {activeSection === link.id && (
-                  <motion.span 
-                    className="absolute -bottom-2 left-1/2 w-1.5 h-1.5 bg-brand-gold rounded-full -translate-x-1/2"
-                    layoutId="activeDot"
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
-              </a>
+              <li key={idx}>
+                <a 
+                  href={link.href} 
+                  className={`rabit relative text-sm font-medium transition-colors hover:text-brand-gold ${activeSection === link.id ? 'text-brand-gold' : 'text-text-primary'}`}
+                >
+                  {link.name}
+                  {activeSection === link.id && (
+                    <motion.span 
+                      className="absolute -bottom-2 left-1/2 w-1.5 h-1.5 bg-brand-gold rounded-full -translate-x-1/2"
+                      layoutId="activeDot"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
 
           <button 
             className="zir-al-qaema md:hidden text-brand-gold" 
