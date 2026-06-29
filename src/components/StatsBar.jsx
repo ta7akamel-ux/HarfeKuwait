@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { number: 15, suffix: '+', label: 'عاماً من الخبرة' },
+  { number: 10, suffix: '+', label: 'عاماً من الخبرة' },
   { number: 500, suffix: '+', label: 'مشروع منجز' },
-  { number: 10, suffix: '', label: 'سنوات ضمان' },
+  { number: 5, suffix: '', label: 'سنوات ضمان' },
   { number: 100, prefix: '%', suffix: '', label: 'تغطية لكل الكويت' },
 ];
 
