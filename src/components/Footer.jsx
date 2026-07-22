@@ -63,15 +63,7 @@ const Footer = () => {
                 </div>
               </a>
 
-              <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-full bg-brand-navy border border-white/5 shadow-inner flex items-center justify-center group-hover:border-brand-gold/50 transition-colors">
-                  <MapPin size={24} className="text-brand-gold" />
-                </div>
-                <div>
-                  <div className="text-sm text-text-secondary mb-1">المعرض الرئيسي</div>
-                  <div className="text-lg font-medium text-text-primary">مدينة الكويت، الكويت</div>
-                </div>
-              </div>
+
             </div>
           </motion.div>
 
