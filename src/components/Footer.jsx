@@ -188,9 +188,15 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="إنستغرام">
+                <a href="https://www.instagram.com/harfekuwait?igsh=MTZ3cjZhZTRneWxuZA==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="إنستغرام">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   <span className="font-sans">إنستغرام</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@harfekuwait?_r=1&_t=ZS-98DbAMR0LJs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="تيك توك">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/><path d="M15 8a4 4 0 1 0 0-4v12a4 4 0 0 1-4 4"/></svg>
+                  <span className="font-sans">تيك توك</span>
                 </a>
               </li>
               <li>
