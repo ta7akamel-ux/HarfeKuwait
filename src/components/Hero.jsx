@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 import backgroundImg from '../../Assets/background.png';
 
 const Hero = () => {
@@ -61,9 +61,14 @@ const Hero = () => {
             حرفية دقيقة، خامات ممتازة، وتصميمات استثنائية تناسب أرقى المنازل في الكويت.
           </motion.p>
           
-          <motion.div variants={textVariants} className="azrar-al-batal flex flex-col sm:flex-row items-center gap-6">
-            <a href="#contact" className="px-8 py-4 bg-brand-gold text-brand-navy font-bold rounded-full hover:bg-brand-gold-light transition-all shadow-gold hover:shadow-gold-lg transform hover:-translate-y-1 w-full sm:w-auto metallic-hover">
+          <motion.div variants={textVariants} className="azrar-al-batal flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mt-4">
+            <a href="#contact" className="px-8 py-4 bg-brand-gold text-brand-navy font-bold rounded-full hover:bg-brand-gold-light transition-all shadow-gold hover:shadow-gold-lg transform hover:-translate-y-1 w-full sm:w-auto metallic-hover text-center">
               احجز استشارتك الآن
+            </a>
+            <a href="tel:55307742" className="group px-8 py-4 border-2 border-brand-gold/80 text-brand-gold font-bold rounded-full hover:bg-brand-gold hover:text-brand-navy transition-all flex items-center justify-center gap-3 w-full sm:w-auto shadow-md backdrop-blur-sm bg-brand-navy/30">
+              <Phone size={20} className="transform transition-transform group-hover:scale-110" />
+              <span>اتصل الآن</span>
+              <span dir="ltr" className="font-sans">55307742</span>
             </a>
             <a href="#gallery" className="group px-8 py-4 border-2 border-brand-gold/30 text-text-primary font-bold rounded-full hover:border-brand-gold hover:text-brand-gold transition-all flex items-center justify-center gap-3 w-full sm:w-auto glass-card">
               استكشف أعمالنا
