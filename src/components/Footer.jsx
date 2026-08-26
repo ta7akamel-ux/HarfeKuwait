@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col gap-8">
-              <a href="tel:55307742" className="flex items-center gap-6 group">
+              <a href="tel:+96555307742" className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-full bg-brand-navy border border-white/5 shadow-inner flex items-center justify-center group-hover:border-brand-gold/50 transition-colors">
                   <Phone size={24} className="text-brand-gold" />
                 </div>

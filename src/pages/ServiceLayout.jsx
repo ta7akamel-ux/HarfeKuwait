@@ -23,10 +23,22 @@ export default function ServiceLayout({ title, description, h1, subtitle, featur
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-8"
           >
             {subtitle}
           </motion.p>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="flex justify-center"
+          >
+            <a href="tel:+96555307742" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-gold text-brand-navy font-bold rounded-full hover:bg-brand-gold-light transition-all shadow-gold hover:shadow-gold-lg transform hover:-translate-y-1 w-full sm:w-auto text-lg">
+              <Phone size={24} className="transform transition-transform group-hover:scale-110" />
+              <span>اتصل الآن:</span>
+              <span dir="ltr" className="font-sans">55307742</span>
+            </a>
+          </motion.div>
         </div>
       </div>
 
@@ -53,7 +65,7 @@ export default function ServiceLayout({ title, description, h1, subtitle, featur
             </div>
 
             <div className="text-center">
-              <a href="tel:55307742" className="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-navy font-bold rounded-full hover:bg-brand-gold-light transition-all shadow-gold hover:shadow-gold-lg transform hover:-translate-y-1">
+              <a href="tel:+96555307742" className="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-navy font-bold rounded-full hover:bg-brand-gold-light transition-all shadow-gold hover:shadow-gold-lg transform hover:-translate-y-1">
                 <Phone size={24} />
                 <span>اتصل الآن لحجز الخدمة</span>
                 <span dir="ltr">55307742</span>
