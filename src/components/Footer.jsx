@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const form = useRef();
@@ -159,12 +160,12 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <nav className="flex flex-col items-start gap-4 order-2 md:order-2" aria-label="روابط سريعة">
-            <h3 className="text-brand-gold font-bold text-base mb-2">روابط سريعة</h3>
+            <h3 className="text-brand-gold font-bold text-base mb-2">خدماتنا</h3>
             <ul className="flex flex-col gap-3">
-              <li><a href="#" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">سياسة الخصوصية</a></li>
-              <li><a href="#" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">شروط الخدمة</a></li>
-              <li><a href="#" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">الضمان</a></li>
-              <li><a href="#" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">دليل الصيانة</a></li>
+              <li><Link to="/صيانة-مطابخ-المنيوم/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">صيانة مطابخ المنيوم</Link></li>
+              <li><Link to="/تصليح-مطابخ-الكويت/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">تصليح مطابخ الكويت</Link></li>
+              <li><Link to="/فك-وتركيب-مطابخ/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">فك وتركيب مطابخ</Link></li>
+              <li><Link to="/تصليح-كبتات-المطابخ/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">تصليح كبتات وأدراج</Link></li>
             </ul>
           </nav>
 

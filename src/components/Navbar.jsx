@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,12 +32,12 @@ const Navbar = () => {
   }, [menuOpen]);
 
   const links = [
-    { name: 'الرئيسية', href: '#home', id: 'home' },
-    { name: 'من احنا', href: '#about', id: 'about' },
-    { name: 'خدماتنا', href: '#services', id: 'services' },
-    { name: 'ليش تختارنا؟', href: '#why-us', id: 'why-us' },
-    { name: 'معرض شغلنا', href: '#gallery', id: 'gallery' },
-    { name: 'تواصل معانا', href: '#contact', id: 'contact' },
+    { name: 'الرئيسية', href: '/' },
+    { name: 'صيانة المنيوم', href: '/صيانة-مطابخ-المنيوم/' },
+    { name: 'تصليح مطابخ', href: '/تصليح-مطابخ-الكويت/' },
+    { name: 'فك وتركيب', href: '/فك-وتركيب-مطابخ/' },
+    { name: 'تصليح كبتات', href: '/تصليح-كبتات-المطابخ/' },
+    { name: 'تواصل معانا', href: '/#contact' },
   ];
 
   return (
@@ -59,8 +60,8 @@ const Navbar = () => {
           <ul className={`rawabit-al-tanaqul hidden md:flex md:flex-row items-center gap-8`} dir="rtl">
             {links.map((link, idx) => (
               <li key={idx}>
-                <a 
-                  href={link.href} 
+                <Link 
+                  to={link.href} 
                   className={`rabit relative text-sm font-medium transition-colors hover:text-brand-gold ${activeSection === link.id ? 'text-brand-gold' : 'text-text-primary'}`}
                 >
                   {link.name}
@@ -71,7 +72,7 @@ const Navbar = () => {
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -101,14 +102,14 @@ const Navbar = () => {
             exit={{ opacity: 0, backdropFilter: 'blur(0px)' }}
           >
             {links.map((link, idx) => (
-              <a 
+              <Link 
                 key={idx} 
-                href={link.href} 
+                to={link.href} 
                 className="text-2xl font-medium text-text-primary hover:text-brand-gold transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}

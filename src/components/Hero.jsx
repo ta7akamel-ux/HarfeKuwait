@@ -53,12 +53,11 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={textVariants} className="unwan-al-batal text-5xl md:text-7xl font-serif font-bold text-text-primary mb-6 leading-tight">
-            فني المنيوم: تصميم <span className="whitespace-nowrap">وصيانة مطابخ</span> المنيوم بالكويت
+            صيانة مطابخ الكويت
           </motion.h1>
           
           <motion.p variants={textVariants} className="wasf-al-batal text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">
-            نجمع بين متانة الألومنيوم والفخامة العصرية لنصنع لك مطبخاً يعكس ذوقك ويدوم طويلاً.
-            حرفية دقيقة، خامات ممتازة، وتصميمات استثنائية تناسب أرقى المنازل في الكويت.
+            نقدم أفضل خدمات صيانة المطابخ في الكويت، فك وتركيب، تصليح كبتات ومفصلات وأدراج المطبخ، وصيانة مطابخ الألمنيوم بحرفية عالية.
           </motion.p>
           
           <motion.div variants={textVariants} className="azrar-al-batal flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mt-4">

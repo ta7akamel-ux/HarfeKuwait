@@ -1,27 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Archive, Wrench, RefreshCw, Compass } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     title: 'تركيب وتفصيل مطابخ الكويت',
-    description: 'تصميم وتفصيل مطابخ ألومنيوم تواكب أحدث الصيحات العالمية لتناسب مساحتك واحتياجاتك.',
-    icon: <Archive size={28} className="text-brand-gold" />
+    description: 'تصميم وتفصيل و فك وتركيب مطابخ ألومنيوم تواكب أحدث الصيحات العالمية لتناسب مساحتك واحتياجاتك.',
+    icon: <Archive size={28} className="text-brand-gold" />,
+    link: '/فك-وتركيب-مطابخ/'
   },
   {
     title: 'تصليح كبتات مطبخ',
     description: 'فريق متخصص لتصليح كبتات المطبخ، صيانة المفصلات والأسطح لتعود كالجديدة.',
-    icon: <Wrench size={28} className="text-brand-gold" />
+    icon: <Wrench size={28} className="text-brand-gold" />,
+    link: '/تصليح-كبتات-المطابخ/'
   },
   {
-    title: 'صيانة ادراج مطابخ المنيوم',
-    description: 'تجديد وتطوير أدراج مطابخ المنيوم وتغيير الواجهات بأقل تكلفة مع ضمان الجودة.',
-    icon: <RefreshCw size={28} className="text-brand-gold" />
+    title: 'صيانة مطابخ المنيوم',
+    description: 'تجديد وتطوير مطابخ المنيوم وصيانة جميع الأعطال بأقل تكلفة مع ضمان الجودة.',
+    icon: <RefreshCw size={28} className="text-brand-gold" />,
+    link: '/صيانة-مطابخ-المنيوم/'
   },
   {
-    title: 'قياس وتخطيط دقيق',
-    description: 'رفع مقاسات دقيق وتقديم رسم هندسي 3D لضمان أفضل استغلال للمساحة قبل البدء.',
-    icon: <Compass size={28} className="text-brand-gold" />
+    title: 'تصليح مطابخ الكويت',
+    description: 'صيانة وتصليح شامل لجميع أنواع المطابخ، إعادة ميزانية وتصليح الأبواب والمفصلات.',
+    icon: <Compass size={28} className="text-brand-gold" />,
+    link: '/تصليح-مطابخ-الكويت/'
   }
 ];
 
@@ -51,14 +56,18 @@ const Services = () => {
               transition={{ duration: 0.6, delay: index * 0.12 }}
               whileHover={{ y: -8 }}
             >
-              <div className="ramz-al-khidma w-16 h-16 mx-auto bg-brand-navy border border-white/5 rounded-full flex items-center justify-center mb-6 shadow-inner relative z-10">
-                {service.icon}
-                <div className="absolute inset-0 bg-brand-gold/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <h3 className="unwan-al-khidma text-xl font-bold text-text-primary mb-3 font-serif relative z-10">{service.title}</h3>
-              <p className="wasf-al-khidma text-sm text-text-secondary leading-relaxed relative z-10">{service.description}</p>
-              
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-gold-light to-brand-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Link to={service.link} className="block w-full h-full">
+                <div className="ramz-al-khidma w-16 h-16 mx-auto bg-brand-navy border border-white/5 rounded-full flex items-center justify-center mb-6 shadow-inner relative z-10">
+                  {service.icon}
+                  <div className="absolute inset-0 bg-brand-gold/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <h3 className="unwan-al-khidma text-xl font-bold text-text-primary mb-3 font-serif relative z-10">{service.title}</h3>
+                <p className="wasf-al-khidma text-sm text-text-secondary leading-relaxed relative z-10 mb-4">{service.description}</p>
+                
+                <span className="inline-block text-brand-gold font-medium text-sm group-hover:underline">اقرأ المزيد &larr;</span>
+                
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-gold-light to-brand-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </Link>
             </motion.div>
           ))}
         </div>
