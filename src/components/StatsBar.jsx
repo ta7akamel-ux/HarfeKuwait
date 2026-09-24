@@ -9,15 +9,34 @@ const stats = [
 ];
 
 const Counter = ({ target, prefix = '', suffix = '' }) => {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
+  // Start with the actual target value so prerendered HTML shows correct numbers
+  const [count, setCount] = useState(target);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
+    // Only run animation on client side
+    if (typeof window === 'undefined') return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          // Reset to 0 and animate up
+          setCount(0);
+          const duration = 2000;
+          const steps = 60;
+          const increment = target / steps;
+          let current = 0;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              setCount(target);
+              clearInterval(timer);
+            } else {
+              setCount(Math.floor(current));
+            }
+          }, duration / steps);
           observer.disconnect();
         }
       },
@@ -25,25 +44,7 @@ const Counter = ({ target, prefix = '', suffix = '' }) => {
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible) return;
-    const duration = 2000;
-    const steps = 60;
-    const increment = target / steps;
-    let current = 0;
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, duration / steps);
-    return () => clearInterval(timer);
-  }, [isVisible, target]);
+  }, [target, hasAnimated]);
 
   return <span ref={ref} dir="ltr" className="inline-block">{prefix}{count}{suffix}</span>;
 };

@@ -50,12 +50,12 @@ const Navbar = () => {
       >
         <div className="hawiyat-al-sharit max-w-[1200px] mx-auto px-8 flex justify-between items-center" dir="rtl">
           
-          <a href="#home" className="shiear flex items-center gap-3 group">
+          <Link to="/" className="shiear flex items-center gap-3 group" aria-label="حرفي الكويت - الصفحة الرئيسية">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold group-hover:text-brand-gold-light transition-colors"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
              <span className="text-brand-gold text-xl md:text-2xl font-serif font-bold tracking-wider group-hover:text-brand-gold-light transition-colors">
               حرفي الكويت | HarfeKuwait
             </span>
-          </a>
+          </Link>
 
           <ul className={`rawabit-al-tanaqul hidden md:flex md:flex-row items-center gap-8`} dir="rtl">
             {links.map((link, idx) => (
