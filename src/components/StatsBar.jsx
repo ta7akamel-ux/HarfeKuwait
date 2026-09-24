@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { number: 10, suffix: '+', label: 'عاماً من الخبرة' },
-  { number: 500, suffix: '+', label: 'مشروع منجز' },
-  { number: 5, suffix: '', label: 'سنوات ضمان' },
-  { number: 100, prefix: '%', suffix: '', label: 'تغطية لكل الكويت' },
+  { number: 4, suffix: '', label: 'خدمات صيانة متخصصة' },
+  { number: 6, suffix: '', label: 'محافظات مخدومة' },
+  { number: 7, suffix: '', label: 'أيام في الأسبوع' },
+  { number: 1, suffix: '', label: 'مصدر خدمة شاملة' },
 ];
 
 const Counter = ({ target, prefix = '', suffix = '' }) => {

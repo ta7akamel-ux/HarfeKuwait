@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
+import businessData, { BASE_URL } from '../businessData';
 
-const BASE_URL = 'https://harfekuwait.com';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/assets/background_1.png`;
+const DEFAULT_OG_IMAGE = businessData.ogImage;
 
 export default function SEO({ title, description, canonical, ogImage, ogType = 'website', noindex = false }) {
   const url = `${BASE_URL}${canonical}`;
@@ -23,7 +23,7 @@ export default function SEO({ title, description, canonical, ogImage, ogType = '
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content="ar_KW" />
-      <meta property="og:site_name" content="حرفي الكويت للألومنيوم" />
+      <meta property="og:site_name" content={businessData.name} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />

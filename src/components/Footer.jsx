@@ -151,7 +151,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-5 order-1 md:order-1 md:max-w-sm">
             <h3 className="text-3xl font-serif font-bold text-brand-gold">حرفي الكويت</h3>
             <p className="text-base text-text-secondary leading-relaxed">
-              نصنع الفخامة من الألومنيوم، نعتبر من أفضل محلات المطابخ في الكويت لتصميم وصيانة المطابخ الفاخرة بمعايير عالمية. نوفر لك جودة مطابخ الشويخ الصناعية وبأفضل أسعار المطابخ في الكويت.
+              حرفي الكويت متخصصون في صيانة وتصليح مطابخ الألمنيوم في الكويت. نقدم خدمات فك وتركيب المطابخ، تصليح الكبتات والأدراج والمفصلات، ونخدم جميع مناطق الكويت.
             </p>
             <p className="text-sm text-text-secondary/70 mt-2 font-sans">
               © 2024 حرفي الكويت. التميز في صناعة الألومنيوم.
@@ -160,12 +160,15 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <nav className="flex flex-col items-start gap-4 order-2 md:order-2" aria-label="روابط سريعة">
-            <h3 className="text-brand-gold font-bold text-base mb-2">خدماتنا</h3>
+            <h3 className="text-brand-gold font-bold text-base mb-2">روابط سريعة</h3>
             <ul className="flex flex-col gap-3">
               <li><Link to="/صيانة-مطابخ-المنيوم/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">صيانة مطابخ المنيوم</Link></li>
               <li><Link to="/تصليح-مطابخ-الكويت/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">تصليح مطابخ الكويت</Link></li>
               <li><Link to="/فك-وتركيب-مطابخ/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">فك وتركيب مطابخ</Link></li>
               <li><Link to="/تصليح-كبتات-المطابخ/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">تصليح كبتات وأدراج</Link></li>
+              <li><Link to="/من-نحن/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">من نحن</Link></li>
+              <li><Link to="/اسئلة-شائعة/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">الأسئلة الشائعة</Link></li>
+              <li><Link to="/اتصل-بنا/" className="text-base text-text-secondary hover:text-brand-gold transition-colors font-sans">اتصل بنا</Link></li>
             </ul>
           </nav>
 
@@ -177,23 +180,23 @@ const Footer = () => {
               <li>
                 <a href="#" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group">
                   <MapPin size={18} className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0" />
-                  <span className="font-sans">الموقع</span>
+                  <span className="font-sans">جميع مناطق الكويت</span>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/harfekuwait?igsh=MTZ3cjZhZTRneWxuZA==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="إنستغرام">
+                <a href="https://www.instagram.com/harfekuwait" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="إنستغرام">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   <span className="font-sans">إنستغرام</span>
                 </a>
               </li>
               <li>
-                <a href="https://www.tiktok.com/@harfekuwait?_r=1&_t=ZS-98DbAMR0LJs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="تيك توك">
+                <a href="https://www.tiktok.com/@harfekuwait" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="تيك توك">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/><path d="M15 8a4 4 0 1 0 0-4v12a4 4 0 0 1-4 4"/></svg>
                   <span className="font-sans">تيك توك</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="واتساب">
+                <a href="https://wa.me/96555307742" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-base text-text-secondary hover:text-brand-gold transition-colors group" aria-label="واتساب">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold/70 group-hover:text-brand-gold transition-colors shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                   <span className="font-sans">واتساب</span>
                 </a>

@@ -7,12 +7,12 @@ import image2 from '../../Assets/unnamed (2).png';
 const features = [
   {
     title: 'خامات أصلية',
-    description: 'ألومنيوم سماكة عالية مقاوم للصدأ والخدوش.',
+    description: 'نستخدم ألومنيوم بسماكة عالية يتميز بمقاومته للرطوبة والحرارة.',
     icon: <BadgeCheck size={24} className="text-brand-gold" />
   },
   {
-    title: 'ضمان شامل',
-    description: 'كفالة حقيقية تمتد لعشر سنوات على الهيكل والمفصلات.',
+    title: 'ضمان على الخدمة',
+    description: 'تفاصيل الضمان تختلف حسب نوع الخدمة والقطعة المستخدمة.',
     icon: <Shield size={24} className="text-brand-gold" />
   },
   {
@@ -54,7 +54,7 @@ const WhyUs = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <img src={image2} alt="أفضل محلات المطابخ في الكويت لتفصيل الألمنيوم" className="w-full h-full object-cover" />
+              <img src={image2} alt="فني صيانة مطابخ ألمنيوم في الكويت" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-brand-navy/20 mix-blend-overlay"></div>
               <div className="absolute bottom-4 left-4 text-xs font-medium text-text-secondary">فريق محترف</div>
             </motion.div>
@@ -70,7 +70,7 @@ const WhyUs = () => {
             >
               <h2 className="text-3xl md:text-4xl font-serif text-text-primary font-bold mb-6">ليش تختار <br/><span className="text-brand-gold">حرفي الكويت؟</span></h2>
               <p className="text-text-secondary text-base leading-relaxed mb-12">
-                باعتبارنا من أفضل محلات المطابخ في الكويت، نحن لا نصنع مجرد مطابخ، بل نبتكر مساحات عمل فنية تدوم لعقود. سواء كنت تبحث عن جودة مطابخ الشويخ الصناعية أو التصاميم العصرية، التزامنا بالجودة يبدأ من اختيار أصغر مسمار وحتى تسليم المشروع.
+                حرفي الكويت متخصصون في صيانة وتصليح مطابخ الألمنيوم. نقدم خدمات فك وتركيب المطابخ، تصليح الكبتات والأدراج والمفصلات في جميع مناطق الكويت. نحرص على استخدام قطع غيار متوافقة وتقديم خدمة احترافية.
               </p>
 
               <div className="flex flex-col gap-8">

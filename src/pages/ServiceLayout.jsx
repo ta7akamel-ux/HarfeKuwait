@@ -19,11 +19,11 @@ export default function ServiceLayout({
       { name: 'الرئيسية', url: '/' },
       { name: h1, url: canonical }
     ],
-    service: service || {
+    service: service === false ? null : (service || {
       name: h1,
       description: description,
       serviceType: h1
-    },
+    }),
     faqs: faqs
   });
 

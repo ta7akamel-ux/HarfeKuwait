@@ -10,6 +10,9 @@ import AluminumKitchens from './pages/AluminumKitchens';
 import KitchenRepair from './pages/KitchenRepair';
 import DismantlingInstallation from './pages/DismantlingInstallation';
 import CabinetRepair from './pages/CabinetRepair';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import FAQPageHub from './pages/FAQPageHub';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -25,12 +28,18 @@ export default function App() {
           <Route path="/تصليح-مطابخ-الكويت/" element={<KitchenRepair />} />
           <Route path="/فك-وتركيب-مطابخ/" element={<DismantlingInstallation />} />
           <Route path="/تصليح-كبتات-المطابخ/" element={<CabinetRepair />} />
+          <Route path="/من-نحن/" element={<About />} />
+          <Route path="/اتصل-بنا/" element={<Contact />} />
+          <Route path="/اسئلة-شائعة/" element={<FAQPageHub />} />
 
           {/* Redirect non-trailing-slash to canonical trailing-slash */}
           <Route path="/صيانة-مطابخ-المنيوم" element={<Navigate to="/صيانة-مطابخ-المنيوم/" replace />} />
           <Route path="/تصليح-مطابخ-الكويت" element={<Navigate to="/تصليح-مطابخ-الكويت/" replace />} />
           <Route path="/فك-وتركيب-مطابخ" element={<Navigate to="/فك-وتركيب-مطابخ/" replace />} />
           <Route path="/تصليح-كبتات-المطابخ" element={<Navigate to="/تصليح-كبتات-المطابخ/" replace />} />
+          <Route path="/من-نحن" element={<Navigate to="/من-نحن/" replace />} />
+          <Route path="/اتصل-بنا" element={<Navigate to="/اتصل-بنا/" replace />} />
+          <Route path="/اسئلة-شائعة" element={<Navigate to="/اسئلة-شائعة/" replace />} />
 
           {/* 404 catch-all */}
           <Route path="*" element={<NotFound />} />

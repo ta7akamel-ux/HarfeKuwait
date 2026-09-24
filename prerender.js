@@ -13,7 +13,10 @@ const routesToPrerender = [
   '/صيانة-مطابخ-المنيوم/',
   '/تصليح-مطابخ-الكويت/',
   '/فك-وتركيب-مطابخ/',
-  '/تصليح-كبتات-المطابخ/'
+  '/تصليح-كبتات-المطابخ/',
+  '/من-نحن/',
+  '/اتصل-بنا/',
+  '/اسئلة-شائعة/'
 ];
 
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;

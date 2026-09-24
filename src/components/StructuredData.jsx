@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-const BASE_URL = 'https://harfekuwait.com';
+import businessData, { BASE_URL } from '../businessData';
 
 /**
  * Central business entity data — single source of truth.
@@ -9,30 +8,30 @@ const BASE_URL = 'https://harfekuwait.com';
 const businessEntity = {
   '@type': 'HomeAndConstructionBusiness',
   '@id': `${BASE_URL}/#business`,
-  name: 'حرفي الكويت للألومنيوم',
-  alternateName: 'HarfeKuwait',
+  name: businessData.name,
+  alternateName: businessData.nameEn,
   url: `${BASE_URL}/`,
-  telephone: '+96555307742',
-  email: 'info@harfekuwait.com',
-  image: `${BASE_URL}/assets/background_1.png`,
-  logo: `${BASE_URL}/favicon.jpg`,
-  description: 'فني ألمنيوم متخصص في صيانة وتصليح مطابخ الألمنيوم في الكويت. نقدم خدمات فك وتركيب المطابخ، تصليح كبتات وأدراج ومفصلات المطبخ.',
+  telephone: businessData.phone,
+  email: businessData.email,
+  image: businessData.ogImage,
+  logo: businessData.logo,
+  description: businessData.description,
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'الكويت',
-    addressCountry: 'KW'
+    addressLocality: businessData.country,
+    addressCountry: businessData.countryCode
   },
   areaServed: {
     '@type': 'Country',
-    name: 'الكويت'
+    name: businessData.country
   },
   sameAs: [
-    'https://www.instagram.com/harfekuwait',
-    'https://www.tiktok.com/@harfekuwait'
+    businessData.instagram,
+    businessData.tiktok
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+96555307742',
+    telephone: businessData.phone,
     contactType: 'customer service',
     availableLanguage: ['ar', 'en']
   }
@@ -42,7 +41,7 @@ const websiteEntity = {
   '@type': 'WebSite',
   '@id': `${BASE_URL}/#website`,
   url: `${BASE_URL}/`,
-  name: 'حرفي الكويت للألومنيوم',
+  name: businessData.name,
   publisher: { '@id': `${BASE_URL}/#business` },
   inLanguage: 'ar'
 };

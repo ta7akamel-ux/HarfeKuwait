@@ -49,7 +49,7 @@ const Hero = () => {
         >
           {/* Gold accent line & label */}
           <motion.div variants={textVariants} className="khut-dhahabi flex items-center gap-4 mb-6">
-            <span className="text-brand-gold text-sm tracking-widest font-medium uppercase">حرفي الكويت للألومنيوم</span>
+            <span className="text-brand-gold text-sm tracking-widest font-medium uppercase">حرفي الكويت</span>
           </motion.div>
 
           <motion.h1 variants={textVariants} className="unwan-al-batal text-5xl md:text-7xl font-serif font-bold text-text-primary mb-6 leading-tight">
@@ -57,7 +57,7 @@ const Hero = () => {
           </motion.h1>
           
           <motion.p variants={textVariants} className="wasf-al-batal text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">
-            نقدم أفضل خدمات صيانة المطابخ في الكويت، فك وتركيب، تصليح كبتات ومفصلات وأدراج المطبخ، وصيانة مطابخ الألمنيوم بحرفية عالية.
+            نقدم خدمات صيانة وتصليح مطابخ الألمنيوم في الكويت، فك وتركيب، تصليح كبتات ومفصلات وأدراج المطبخ بحرفية عالية.
           </motion.p>
           
           <motion.div variants={textVariants} className="azrar-al-batal flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mt-4">

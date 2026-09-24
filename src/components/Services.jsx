@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'تركيب وتفصيل مطابخ الكويت',
-    description: 'تصميم وتفصيل و فك وتركيب مطابخ ألومنيوم تواكب أحدث الصيحات العالمية لتناسب مساحتك واحتياجاتك.',
+    title: 'فك وتركيب مطابخ الكويت',
+    description: 'خدمة فك وتركيب مطابخ الألمنيوم عند الانتقال أو التجديد، مع تعديل القياسات وضبط الميزانية بدقة.',
     icon: <Archive size={28} className="text-brand-gold" />,
     link: '/فك-وتركيب-مطابخ/'
   },
@@ -41,7 +41,7 @@ const Services = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="unwan-al-qism text-3xl md:text-4xl font-serif text-text-primary font-bold mb-4">خدمات تركيب وتفصيل مطابخ الكويت</h2>
+          <h2 className="unwan-al-qism text-3xl md:text-4xl font-serif text-text-primary font-bold mb-4">خدمات صيانة وتصليح المطابخ في الكويت</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-brand-gold-light to-brand-gold rounded-full mx-auto"></div>
         </motion.div>
 

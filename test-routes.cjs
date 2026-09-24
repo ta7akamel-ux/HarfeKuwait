@@ -2,16 +2,20 @@ const http = require('http');
 
 const routes = [
   '/',
-  '/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%85%D8%B7%D8%A7%D8%A8%D8%AE-%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%88%D9%85/',
-  '/%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%85%D8%B7%D8%A7%D8%A8%D8%AE-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/',
-  '/%D9%81%D9%83-%D9%88%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%85%D8%B7%D8%A7%D8%A8%D8%AE/',
-  '/%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%83%D8%A8%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%A8%D8%AE/',
-  '/unknown-page-404'
+  encodeURI('/صيانة-مطابخ-المنيوم/'),
+  encodeURI('/تصليح-مطابخ-الكويت/'),
+  encodeURI('/فك-وتركيب-مطابخ/'),
+  encodeURI('/تصليح-كبتات-المطابخ/'),
+  encodeURI('/من-نحن/'),
+  encodeURI('/اتصل-بنا/'),
+  encodeURI('/اسئلة-شائعة/'),
+  '/unknown-page-404',
+  encodeURI('/الاسعار/')
 ];
 
 async function fetchRoute(route) {
   return new Promise((resolve) => {
-    http.get(`http://localhost:3000${route}`, (res) => {
+    http.get(`http://127.0.0.1:3000${route}`, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => resolve({ statusCode: res.statusCode, data }));
@@ -37,15 +41,15 @@ async function run() {
     console.log(`Route: ${decodedRoute} (Status: ${statusCode})`);
     console.log('='.repeat(60));
 
-    if (route === '/unknown-page-404') {
+    if (route === '/unknown-page-404' || route === encodeURI('/الاسعار/')) {
       // 404 test: should return 200 with SPA fallback but contain "404" content
       const has404Content = data.includes('404') || data.includes('غير موجودة');
       totalTests++;
       if (has404Content) {
         passedTests++;
-        console.log('  ✅ 404 page contains expected content');
+        console.log(`  ✅ ${route === '/unknown-page-404' ? '404' : 'Removed'} page contains expected error content`);
       } else {
-        console.log('  ⚠️ 404 page may not show proper error content');
+        console.log(`  ⚠️ ${route === '/unknown-page-404' ? '404' : 'Removed'} page may not show proper error content`);
       }
       continue;
     }
@@ -118,8 +122,14 @@ async function run() {
       check('FAQ content in DOM', hasFaqContent ? 'Yes' : null),
     ];
 
-    if (route !== '/') {
+    const nonServiceRoutes = ['/', encodeURI('/من-نحن/'), encodeURI('/اتصل-بنا/'), encodeURI('/اسئلة-شائعة/')];
+    if (!nonServiceRoutes.includes(route)) {
       tests.push(check('Service schema', hasServiceSchema ? 'Yes' : null, true));
+    }
+    
+    // Test FAQ schema separately as it might be present or missing based on page
+    const noFaqRoutes = [encodeURI('/اتصل-بنا/')];
+    if (!noFaqRoutes.includes(route) && route !== '/') {
       tests.push(check('FAQ schema', hasFaqSchema ? 'Yes' : null, true));
     }
 
