@@ -5,25 +5,25 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'فك وتركيب مطابخ الكويت',
+    title: 'فك وتركيب المطابخ',
     description: 'خدمة فك وتركيب مطابخ الألمنيوم عند الانتقال أو التجديد، مع تعديل القياسات وضبط الميزانية بدقة.',
     icon: <Archive size={28} className="text-brand-gold" />,
     link: '/فك-وتركيب-مطابخ/'
   },
   {
-    title: 'تصليح كبتات مطبخ',
+    title: 'إصلاح كبتات ودواليب المطبخ',
     description: 'فريق متخصص لتصليح كبتات المطبخ، صيانة المفصلات والأسطح لتعود كالجديدة.',
     icon: <Wrench size={28} className="text-brand-gold" />,
     link: '/تصليح-كبتات-المطابخ/'
   },
   {
-    title: 'صيانة مطابخ المنيوم',
+    title: 'صيانة مطابخ الألمنيوم',
     description: 'تجديد وتطوير مطابخ المنيوم وصيانة جميع الأعطال بأقل تكلفة مع ضمان الجودة.',
     icon: <RefreshCw size={28} className="text-brand-gold" />,
     link: '/صيانة-مطابخ-المنيوم/'
   },
   {
-    title: 'تصليح مطابخ الكويت',
+    title: 'تصليح المطابخ وصيانتها',
     description: 'صيانة وتصليح شامل لجميع أنواع المطابخ، إعادة ميزانية وتصليح الأبواب والمفصلات.',
     icon: <Compass size={28} className="text-brand-gold" />,
     link: '/تصليح-مطابخ-الكويت/'

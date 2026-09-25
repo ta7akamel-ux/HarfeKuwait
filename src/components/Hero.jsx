@@ -53,11 +53,11 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={textVariants} className="unwan-al-batal text-5xl md:text-7xl font-serif font-bold text-text-primary mb-6 leading-tight">
-            صيانة مطابخ الكويت
+            فني ألمنيوم وصيانة مطابخ الكويت
           </motion.h1>
           
           <motion.p variants={textVariants} className="wasf-al-batal text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">
-            نقدم خدمات صيانة وتصليح مطابخ الألمنيوم في الكويت، فك وتركيب، تصليح كبتات ومفصلات وأدراج المطبخ بحرفية عالية.
+            إذا كنت تبحث عن فني ألمنيوم متخصص في صيانة وإصلاح مطابخ الألمنيوم في الكويت، يقدم لك حرفي الكويت خدمات فك وتركيب المطابخ، ومعالجة أعطال الأبواب، وإصلاح المفصلات والأدراج بحرفية عالية.
           </motion.p>
           
           <motion.div variants={textVariants} className="azrar-al-batal flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mt-4">
